@@ -1,0 +1,85 @@
+.hero {
+    display: flex;
+
+    align-items: center;
+    margin: 0 auto;
+
+    flex-direction: column;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        height: 60vh;
+        margin: 0 auto;
+        align-items: center;
+        width: 100%;
+        &-left {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            h1 {
+                font-family: $font-family-primary;
+                color: $secondary-color;
+                font-size: 80px;
+                text-transform: uppercase;
+                font-weight: 900;
+                text-align: start;
+            }
+            h2 {
+                font-family: $font-family-primary;
+                color: darken($color: $secondary-color, $amount: 50);
+                text-align: start;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+
+        &-right {
+            &-foto-perfil {
+                height: 300px;
+                object-fit: cover;
+                border-radius: 200px;
+            }
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        &__social-media,
+        &__personal,
+        &__location {
+            display: flex;
+            margin: 10px 0;
+            &-item {
+                display: flex;
+                cursor: pointer;
+                align-items: center;
+                margin-right: 30px;
+
+                &:hover {
+                    i,
+                    p {
+                        color: $third-color;
+                    }
+                }
+                i {
+                    color: $secondary-color;
+                    font-size: 20px;
+                    width: 20px;
+                    margin-right: 6px;
+                    box-sizing: border-box;
+                    color: darken($color: $secondary-color, $amount: 50);
+                }
+                p {
+                    color: $secondary-color;
+                    font-family: $font-family-primary;
+                    font-weight: 200;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
