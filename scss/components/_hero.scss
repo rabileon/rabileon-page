@@ -1,11 +1,9 @@
 .hero {
     display: flex;
-
     align-items: center;
     margin: 0 auto;
-
     flex-direction: column;
-
+    height: 90vh;
     &__header {
         display: flex;
         justify-content: space-between;
@@ -27,7 +25,7 @@
             }
             h2 {
                 font-family: $font-family-primary;
-                color: darken($color: $secondary-color, $amount: 50);
+                color: lighten($color: $fourth-color, $amount: 20);
                 text-align: start;
                 font-weight: 600;
                 font-size: 20px;
@@ -66,17 +64,16 @@
                     }
                 }
                 i {
-                    color: $secondary-color;
+                    color: lighten($color: $fourth-color, $amount: 20);
                     font-size: 20px;
                     width: 20px;
                     margin-right: 6px;
                     box-sizing: border-box;
-                    color: darken($color: $secondary-color, $amount: 50);
                 }
                 p {
-                    color: $secondary-color;
+                    color: lighten($color: $fourth-color, $amount: 20);
                     font-family: $font-family-primary;
-                    font-weight: 200;
+                    font-weight: 600;
                     font-size: 15px;
                 }
             }

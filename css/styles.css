@@ -119,17 +119,17 @@ li {
 
 .btn-primary {
   background-color: #161616;
-  border: 2.5px solid #83f58d;
+  border: 2.5px solid #00c896;
   border-radius: 40px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #c8fcea;
   text-align: center;
   cursor: pointer;
 }
 .btn-primary:hover {
-  background-color: #83f58d;
+  background-color: #00c896;
   color: #161616;
 }
 
@@ -151,10 +151,19 @@ li {
   height: 80px;
 }
 .navbar__logo {
-  width: 40px;
-  height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+.navbar__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navbar__right {
   display: -webkit-box;
@@ -177,11 +186,11 @@ li {
 .navbar__right a {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: #ffffff;
+  color: #c8fcea;
   padding: 8px;
 }
 .navbar__right a:hover {
-  color: #83f58d;
+  color: #00c896;
 }
 .navbar__right li {
   margin: 0 20px;
@@ -199,6 +208,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 90vh;
 }
 .hero__header {
   display: -webkit-box;
@@ -228,7 +238,7 @@ li {
 }
 .hero__header-left h1 {
   font-family: "Montserrat", sans-serif;
-  color: #ffffff;
+  color: #c8fcea;
   font-size: 80px;
   text-transform: uppercase;
   font-weight: 900;
@@ -236,7 +246,7 @@ li {
 }
 .hero__header-left h2 {
   font-family: "Montserrat", sans-serif;
-  color: gray;
+  color: #adabb6;
   text-align: start;
   font-weight: 600;
   font-size: 20px;
@@ -280,20 +290,48 @@ li {
 .hero__contact__social-media-item:hover p, .hero__contact__personal-item:hover i,
 .hero__contact__personal-item:hover p, .hero__contact__location-item:hover i,
 .hero__contact__location-item:hover p {
-  color: #83f58d;
+  color: #00c896;
 }
 .hero__contact__social-media-item i, .hero__contact__personal-item i, .hero__contact__location-item i {
-  color: #ffffff;
+  color: #adabb6;
   font-size: 20px;
   width: 20px;
   margin-right: 6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: gray;
 }
 .hero__contact__social-media-item p, .hero__contact__personal-item p, .hero__contact__location-item p {
-  color: #ffffff;
+  color: #adabb6;
   font-family: "Montserrat", sans-serif;
-  font-weight: 200;
+  font-weight: 600;
   font-size: 15px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #c8fcea;
+}
+.about__text {
+  padding: 60px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 35px;
+  color: white;
+  text-align: center;
 }

@@ -1,0 +1,22 @@
+.about {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    &__title {
+        font-family: $font-family-primary;
+        font-weight: 900;
+        font-size: 40px;
+        color: $secondary-color;
+    }
+
+    &__text {
+        padding: 60px 0;
+        font-family: $font-family-primary;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 35px;
+        color: lighten($color: $secondary-color, $amount: 60);
+        text-align: center;
+    }
+}
