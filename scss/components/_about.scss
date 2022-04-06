@@ -3,6 +3,12 @@
     align-items: center;
     margin: 0 auto;
     flex-direction: column;
+    height: 90vh;
+
+    &__description {
+        display: flex;
+    }
+
     &__title {
         font-family: $font-family-primary;
         font-weight: 900;
@@ -11,12 +17,17 @@
     }
 
     &__text {
-        padding: 60px 0;
+        padding: 60px 60px 60px 0;
         font-family: $font-family-primary;
         font-weight: 400;
         font-size: 19px;
         line-height: 35px;
         color: lighten($color: $secondary-color, $amount: 60);
-        text-align: center;
+        text-align: start;
+    }
+
+    &__img {
+        width: 500px;
+        object-fit: contain;
     }
 }
